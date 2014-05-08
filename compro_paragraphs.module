@@ -1,0 +1,57 @@
+<?php
+/**
+ * @file
+ * Code for the compro_paragraphs feature.
+ */
+
+include_once 'compro_paragraphs.features.inc';
+
+/**
+ * Implements hook_field_formatter_info().
+ */
+function compro_paragraphs_field_formatter_info() {
+  $info = array(
+    'heading' => array(
+      'label' => t('Heading'),
+      'field types' => array('text'),
+      'description' => t('Displays text as a heading element'),
+    ),
+  );
+
+  return $info;
+}
+
+/**
+ * Implements hook_field_formatter_view().
+ */
+function compro_paragraphs_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
+  $element = array();
+  switch ($display['type']) {
+    case 'heading':
+      foreach ($items as $delta => $item) {
+        $element[$delta] = array(
+          '#theme' => 'compro_paragraphs_heading',
+          '#level' => $entity->field_heading_level[LANGUAGE_NONE][0]['value'],
+          '#text' => $entity->field_heading_text[LANGUAGE_NONE][0]['safe_value'],
+        );
+      }
+      break;
+  }
+
+  return $element;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function compro_paragraphs_theme($existing, $type, $theme, $path) {
+  return array(
+    'compro_paragraphs_heading' => array(
+      'template' => 'theme/compro_paragraphs_heading',
+      'variables' => array(
+        'level' => NULL,
+        'text' => NULL,
+      ),
+    ),
+  );
+}
