@@ -18,24 +18,24 @@ function compro_paragraphs_ctools_plugin_api($module = NULL, $api = NULL) {
  */
 function compro_paragraphs_paragraphs_info() {
   $items = array(
+    'blockquote' => array(
+      'name' => 'Blockquote',
+      'bundle' => 'blockquote',
+      'locked' => '1',
+    ),
     'heading' => array(
       'name' => 'Heading',
       'bundle' => 'heading',
       'locked' => '1',
     ),
-    'image' => array(
-      'name' => 'Image',
-      'bundle' => 'image',
+    'longtext' => array(
+      'name' => 'Long text',
+      'bundle' => 'longtext',
       'locked' => '1',
     ),
-    'text' => array(
-      'name' => 'Text',
-      'bundle' => 'text',
-      'locked' => '1',
-    ),
-    'video' => array(
-      'name' => 'Video',
-      'bundle' => 'video',
+    'media' => array(
+      'name' => 'Media',
+      'bundle' => 'media',
       'locked' => '1',
     ),
   );
