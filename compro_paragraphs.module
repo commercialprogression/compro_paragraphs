@@ -214,6 +214,31 @@ function compro_paragraphs_preprocess_entity(&$vars) {
 }
 
 /**
+ * Implements template_preprocess_file_entity().
+ */
+function compro_paragraphs_preprocess_file_entity(&$vars) {
+  // Use the media dropdowns to make the element float/clear.
+  if ($vars['referencing_field'] === 'field_media_media') {
+    // Attach CSS so the floats/clears work.
+    drupal_add_css(drupal_get_path('module', 'compro_paragraphs') . '/compro_paragraphs.css', array(
+      'every_page' => TRUE,
+    ));
+
+    // Add float class if float field populated.
+    if (isset($vars['referencing_entity']->field_media_float[LANGUAGE_NONE][0]['value'])) {
+      $vars['classes_array'][] = 'float-' 
+        . check_plain($vars['referencing_entity']->field_media_float[LANGUAGE_NONE][0]['value']);
+    }
+
+    // Add clear class if clear field populated.
+    if (isset($vars['referencing_entity']->field_media_clear[LANGUAGE_NONE][0]['value'])) {
+      $vars['classes_array'][] = 'float-' 
+        . check_plain($vars['referencing_entity']->field_media_clear[LANGUAGE_NONE][0]['value']);
+    }
+  }
+}
+
+/**
  * Implements hook_theme_registery_alter().
  */
 function compro_paragraphs_theme_registry_alter(&$theme_registry) {

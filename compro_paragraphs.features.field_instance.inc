@@ -10,7 +10,8 @@
 function compro_paragraphs_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'paragraphs_item-blockquote-field_blockquote_quote'
+  // Exported field_instance:
+  // 'paragraphs_item-blockquote-field_blockquote_quote'
   $field_instances['paragraphs_item-blockquote-field_blockquote_quote'] = array(
     'bundle' => 'blockquote',
     'default_value' => NULL,
@@ -31,6 +32,18 @@ function compro_paragraphs_field_default_field_instances() {
           'trim_length' => 150,
         ),
         'type' => 'text_trimmed',
+        'weight' => 0,
+      ),
+      'small' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
     ),
@@ -74,6 +87,18 @@ function compro_paragraphs_field_default_field_instances() {
         'type' => 'heading_default',
         'weight' => 0,
       ),
+      'small' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
     ),
     'entity_type' => 'paragraphs_item',
     'field_name' => 'field_heading_heading',
@@ -115,6 +140,18 @@ function compro_paragraphs_field_default_field_instances() {
         'type' => 'text_trimmed',
         'weight' => 0,
       ),
+      'small' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
     ),
     'entity_type' => 'paragraphs_item',
     'field_name' => 'field_longtext_text',
@@ -132,6 +169,110 @@ function compro_paragraphs_field_default_field_instances() {
       ),
       'type' => 'text_textarea',
       'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance: 'paragraphs_item-media-field_media_clear'
+  $field_instances['paragraphs_item-media-field_media_clear'] = array(
+    'bundle' => 'media',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Allows your decide whether you want other items floating to the left or right of this item',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'small' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_media_clear',
+    'label' => 'Clear',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'paragraphs_item-media-field_media_float'
+  $field_instances['paragraphs_item-media-field_media_float'] = array(
+    'bundle' => 'media',
+    'default_value' => array(
+      0 => array(
+        'value' => 'none',
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Choose \'None\' to keep the media in line with the text, or align it to the left or right',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'small' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
+    ),
+    'entity_type' => 'paragraphs_item',
+    'field_name' => 'field_media_float',
+    'label' => 'Float',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => '',
+      ),
+      'type' => 'options_select',
+      'weight' => 2,
     ),
   );
 
@@ -153,8 +294,28 @@ function compro_paragraphs_field_default_field_instances() {
       'paragraphs_editor_preview' => array(
         'label' => 'hidden',
         'module' => 'media',
-        'settings' => array(),
+        'settings' => array(
+          'image_style' => '',
+        ),
         'type' => 'media_large_icon',
+        'weight' => 0,
+      ),
+      'small' => array(
+        'label' => 'hidden',
+        'module' => 'file_entity',
+        'settings' => array(
+          'file_view_mode' => 'small',
+        ),
+        'type' => 'file_rendered',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'hidden',
+        'module' => 'file_entity',
+        'settings' => array(
+          'file_view_mode' => 'teaser',
+        ),
+        'type' => 'file_rendered',
         'weight' => 0,
       ),
     ),
@@ -185,7 +346,7 @@ function compro_paragraphs_field_default_field_instances() {
         'browser_plugins' => array(
           'media_default--media_browser_1' => 0,
           'media_default--media_browser_my_files' => 0,
-          'upload' => 'upload',
+          'upload' => 0,
         ),
       ),
       'type' => 'media_generic',
@@ -195,6 +356,10 @@ function compro_paragraphs_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Allows your decide whether you want other items floating to the left or right of this item');
+  t('Choose \'None\' to keep the media in line with the text, or align it to the left or right');
+  t('Clear');
+  t('Float');
   t('Heading');
   t('Media');
   t('Quote');
