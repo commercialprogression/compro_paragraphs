@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_blockquote_quote
+    - paragraphs.paragraphs_type.blockquote
+  module:
+    - text
+_core:
+  default_config_hash: LZFXMv41Mv7DbJbeRuKfFxpXiGqoamkY1wDDslq3BEg
+id: paragraph.blockquote.field_blockquote_quote
+field_name: field_blockquote_quote
+entity_type: paragraph
+bundle: blockquote
+label: Quote
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

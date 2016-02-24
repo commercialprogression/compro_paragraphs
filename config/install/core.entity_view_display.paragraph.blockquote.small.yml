@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.small
+    - field.field.paragraph.blockquote.field_blockquote_quote
+    - paragraphs.paragraphs_type.blockquote
+_core:
+  default_config_hash: eKMfjFh7qlpJ9pCqfMTdQ2qtnLHMF9mDZqFxkC8RWtE
+id: paragraph.blockquote.small
+targetEntityType: paragraph
+bundle: blockquote
+mode: small
+content: {  }
+hidden:
+  created: true
+  field_blockquote_quote: true
+  uid: true

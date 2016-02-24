@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_float
+    - paragraphs.paragraphs_type.media
+  module:
+    - options
+_core:
+  default_config_hash: eWtm1YPYxkBuUXd_pzjF6gGsVca53udPw5NSnx8bebc
+id: paragraph.media.field_media_float
+field_name: field_media_float
+entity_type: paragraph
+bundle: media
+label: Float
+description: 'Choose ''None'' to keep the media in line with the text, or align it to the left or right'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

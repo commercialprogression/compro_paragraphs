@@ -1,0 +1,42 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media.field_media_clear
+    - field.field.paragraph.media.field_media_float
+    - field.field.paragraph.media.field_media_media
+    - paragraphs.paragraphs_type.media
+  module:
+    - file_browser
+_core:
+  default_config_hash: SGJN8_NWF2iJ0Lzl4WsCTE8F4a-J0X1XXf4SEavNKvA
+id: paragraph.media.default
+targetEntityType: paragraph
+bundle: media
+mode: default
+content:
+  field_media_clear:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_media_float:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_media_media:
+    weight: 0
+    settings:
+      entity_browser: browse_files_modal
+      field_widget_edit: '1'
+      field_widget_remove: '1'
+      open: '1'
+      view_mode: thumbnail
+      field_widget_display: ''
+      field_widget_display_settings: {  }
+    third_party_settings: {  }
+    type: file_browser
+hidden:
+  created: true
+  uid: true

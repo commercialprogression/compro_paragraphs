@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.small
+    - field.field.paragraph.longtext.field_longtext_text
+    - paragraphs.paragraphs_type.longtext
+_core:
+  default_config_hash: FQ4r_gnxCvKI-ASarmVw7rQvEkJuMm5x6aZVp2ndVIk
+id: paragraph.longtext.small
+targetEntityType: paragraph
+bundle: longtext
+mode: small
+content: {  }
+hidden:
+  created: true
+  field_longtext_text: true
+  uid: true

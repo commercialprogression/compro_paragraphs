@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: oVH3W3RSOMArx9yZUg_P3ysEmzSF8sM6qhfJ7H0QQwI
+id: blockquote
+label: Blockquote

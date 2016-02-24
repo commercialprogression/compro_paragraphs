@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.teaser
+    - field.field.paragraph.blockquote.field_blockquote_quote
+    - paragraphs.paragraphs_type.blockquote
+_core:
+  default_config_hash: '-_rVdynE_Z8-1GbHEnEKH996129nqlev06gqB4FCD8Y'
+id: paragraph.blockquote.teaser
+targetEntityType: paragraph
+bundle: blockquote
+mode: teaser
+content: {  }
+hidden:
+  created: true
+  field_blockquote_quote: true
+  uid: true

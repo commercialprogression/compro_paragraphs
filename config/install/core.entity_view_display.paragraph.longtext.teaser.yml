@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.teaser
+    - field.field.paragraph.longtext.field_longtext_text
+    - paragraphs.paragraphs_type.longtext
+_core:
+  default_config_hash: Oc6r3RVYQxPb7s8OZZh5TXCI2Z3tw3k3RmUvb5m5TeQ
+id: paragraph.longtext.teaser
+targetEntityType: paragraph
+bundle: longtext
+mode: teaser
+content: {  }
+hidden:
+  created: true
+  field_longtext_text: true
+  uid: true

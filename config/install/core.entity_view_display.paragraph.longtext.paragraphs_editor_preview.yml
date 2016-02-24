@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.paragraphs_editor_preview
+    - field.field.paragraph.longtext.field_longtext_text
+    - paragraphs.paragraphs_type.longtext
+  module:
+    - text
+_core:
+  default_config_hash: 0khNTmfSDtKAHu4VlMvQAgT_FThr5Xir7xBm1Plkp90
+id: paragraph.longtext.paragraphs_editor_preview
+targetEntityType: paragraph
+bundle: longtext
+mode: paragraphs_editor_preview
+content:
+  field_longtext_text:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 150
+    third_party_settings: {  }
+    type: text_trimmed
+hidden:
+  created: true
+  uid: true

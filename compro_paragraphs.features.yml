@@ -1,0 +1,32 @@
+bundle: compro
+required:
+  - core.entity_form_display.paragraph.blockquote.default
+  - core.entity_form_display.paragraph.longtext.default
+  - core.entity_form_display.paragraph.media.default
+  - core.entity_view_display.paragraph.blockquote.default
+  - core.entity_view_display.paragraph.blockquote.paragraphs_editor_preview
+  - core.entity_view_display.paragraph.blockquote.small
+  - core.entity_view_display.paragraph.blockquote.teaser
+  - core.entity_view_display.paragraph.longtext.default
+  - core.entity_view_display.paragraph.longtext.paragraphs_editor_preview
+  - core.entity_view_display.paragraph.longtext.small
+  - core.entity_view_display.paragraph.longtext.teaser
+  - core.entity_view_display.paragraph.media.default
+  - core.entity_view_display.paragraph.media.paragraphs_editor_preview
+  - core.entity_view_display.paragraph.media.small
+  - core.entity_view_display.paragraph.media.teaser
+  - field.field.paragraph.blockquote.field_blockquote_quote
+  - field.field.paragraph.longtext.field_longtext_text
+  - field.field.paragraph.media.field_media_clear
+  - field.field.paragraph.media.field_media_float
+  - field.field.paragraph.media.field_media_media
+  - field.storage.paragraph.field_blockquote_quote
+  - field.storage.paragraph.field_longtext_text
+  - field.storage.paragraph.field_media_clear
+  - field.storage.paragraph.field_media_float
+  - field.storage.paragraph.field_media_media
+  - field.storage.paragraph.field_heading_heading
+  - paragraphs.paragraphs_type.blockquote
+  - paragraphs.paragraphs_type.heading
+  - paragraphs.paragraphs_type.longtext
+  - paragraphs.paragraphs_type.media

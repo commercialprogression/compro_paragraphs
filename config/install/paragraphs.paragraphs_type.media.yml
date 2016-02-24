@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: QiQkH4t3zqgNgFOtlXnNMWT320lrRF2Idr-f8lHJZ0U
+id: media
+label: Media

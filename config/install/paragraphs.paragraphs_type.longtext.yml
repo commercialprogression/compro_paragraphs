@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: XJVekO3dO7DkbhO2vv-tQUWd0rHbXKDQ2p5kSiqxBl0
+id: longtext
+label: 'Long text'

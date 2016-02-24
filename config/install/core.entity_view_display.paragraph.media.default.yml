@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media.field_media_clear
+    - field.field.paragraph.media.field_media_float
+    - field.field.paragraph.media.field_media_media
+    - paragraphs.paragraphs_type.media
+_core:
+  default_config_hash: hG_7aClHoNwu0PrA3Fh9DDVbZhaPmivCg9jxDSniabA
+id: paragraph.media.default
+targetEntityType: paragraph
+bundle: media
+mode: default
+content:
+  field_media_media:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+hidden:
+  created: true
+  field_media_clear: true
+  field_media_float: true
+  uid: true

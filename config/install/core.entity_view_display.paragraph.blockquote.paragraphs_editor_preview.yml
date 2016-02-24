@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.paragraphs_editor_preview
+    - field.field.paragraph.blockquote.field_blockquote_quote
+    - paragraphs.paragraphs_type.blockquote
+  module:
+    - text
+_core:
+  default_config_hash: Hr3efftiNlPyGeK4CPpaHS7fHgloiCrae2HCr-6cb_g
+id: paragraph.blockquote.paragraphs_editor_preview
+targetEntityType: paragraph
+bundle: blockquote
+mode: paragraphs_editor_preview
+content:
+  field_blockquote_quote:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 150
+    third_party_settings: {  }
+    type: text_trimmed
+hidden:
+  created: true
+  uid: true

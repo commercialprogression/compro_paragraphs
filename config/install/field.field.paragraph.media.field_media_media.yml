@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_media
+    - paragraphs.paragraphs_type.media
+  module:
+    - file
+_core:
+  default_config_hash: eF3aTpmmegA6WtS_GFiwI2DLYMXaGK5GastZQc0zqME
+id: paragraph.media.field_media_media
+field_name: field_media_media
+entity_type: paragraph
+bundle: media
+label: Media
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: ''
+  file_extensions: 'txt doc docx ppt pptx xls xlsx gif jpg png mp4 pdf'
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

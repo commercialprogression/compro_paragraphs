@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.paragraphs_editor_preview
+    - field.field.paragraph.media.field_media_clear
+    - field.field.paragraph.media.field_media_float
+    - field.field.paragraph.media.field_media_media
+    - paragraphs.paragraphs_type.media
+  module:
+    - file
+_core:
+  default_config_hash: CdE8ttSoIL8pLsv1e14zpyrYGLc1LYR1DUBhahqBl-o
+id: paragraph.media.paragraphs_editor_preview
+targetEntityType: paragraph
+bundle: media
+mode: paragraphs_editor_preview
+content:
+  field_media_media:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_url_plain
+hidden:
+  created: true
+  field_media_clear: true
+  field_media_float: true
+  uid: true

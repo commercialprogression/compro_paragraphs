@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_clear
+    - paragraphs.paragraphs_type.media
+  module:
+    - options
+_core:
+  default_config_hash: Rhjq1yW2ADcf5cxMumbMY8FbkIAQ0zn9zCNoLQ6pWtw
+id: paragraph.media.field_media_clear
+field_name: field_media_clear
+entity_type: paragraph
+bundle: media
+label: Clear
+description: 'Allows your decide whether you want other items floating to the left or right of this item'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

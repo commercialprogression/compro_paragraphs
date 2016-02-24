@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: cuVQ813WelXqR-XBQLClNPrwXufW4tyg-x-S0sh1ubc
+id: heading
+label: Heading

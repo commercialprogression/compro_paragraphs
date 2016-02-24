@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.longtext.field_longtext_text
+    - paragraphs.paragraphs_type.longtext
+  module:
+    - text
+_core:
+  default_config_hash: _KXHKV7nezwuDYviKuuG35y87vnc1dbQSfPaqkCQutA
+id: paragraph.longtext.default
+targetEntityType: paragraph
+bundle: longtext
+mode: default
+content:
+  field_longtext_text:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+hidden:
+  created: true
+  uid: true
